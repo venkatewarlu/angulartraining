@@ -1,0 +1,77 @@
+<app-headercomp [title]="'Products'"></app-headercomp>
+<!-- <app-amazecard></app-amazecard> -->
+
+
+<div class="container-fluid">
+    <div class="row" style="background-color: #00E676; height:180px; padding:10px">
+        <div class="offset-2 col-2">
+            <app-statcard [count]="45" [title]="'TOTAL'" [iconClass]="'fas fa-boxes'" [color]="'blue'">
+            </app-statcard>
+
+        </div>
+        <div class="col-2">
+            <app-statcard [count]="24" [title]="'SOLD'" [iconClass]="'fas fa-shipping-fast'" [color]="'#880E4F'">
+            </app-statcard>
+
+        </div>
+        <div class="col-2">
+            <app-statcard [count]="21" [title]="'STOCK'" [iconClass]="'fas fa-warehouse'" [color]="'red'">
+            </app-statcard>
+
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob1.jpg'" [model]="'Samsung Galaxy M10 (Charcoal Black, 3+32GB)'"
+                [price]="24999"></app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob2.jpg'" [model]="'OnePlus 6T (Mirror Black, 6GB RAM, 128GB Storage)'"
+                [price]="25999">
+            </app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob3.jpg'" [model]="'Lenovo K8 Note (Venom Black, 4GB RAM, 64GB Storage)'"
+                [price]="27999"></app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob4.jpg'" [model]="'Redmi Note 5 Pro (Black, 6GB RAM, 64GB Storage)'"
+                [price]="30999"></app-amazecard>
+
+        </div>
+
+    </div> -->
+
+    <app-amazecard></app-amazecard>
+    <!-- <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob5.jpg'" [model]="'Apple iPhone X (64GB) - Space Grey'" [price]="74999">
+            </app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob6.jpg'" [model]="'Apple iPhone 6 (Gold, 1GB RAM, 32GB Storage)'"
+                [price]="28384">
+            </app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob7.jpg'" [model]="'Apple iPhone 6s (32GB) - Space Gray'" [price]="29599">
+            </app-amazecard>
+
+        </div>
+        <div class="col-3">
+            <app-amazecard [srcUrl]="'assets/mob8.jpg'" [model]="'Apple iPhone 7 (32GB) - Black'" [price]="39499">
+            </app-amazecard>
+
+        </div> -->
+
+    <button type="button" class="btn btn-primary" (click)="navigateToAddProduct()">Add
+        Product</button>
+
+    <div class="row">
+        <app-user-table [data]="products" [tableHeaders]="tableHeaders"></app-user-table>
+    </div>
+</div>

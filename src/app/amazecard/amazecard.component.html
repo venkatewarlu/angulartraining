@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let prd of product">
+
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="height: 330px; width:300px;margin-top:20px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6" style="border-right:1px solid ; height:230px">
+            <!-- <img src="{{srcUrl}}" style="height:200px; width:110px"> -->
+            <img [src]="prd.image" style="height:200px; width:110px">
+
+          </div>
+          <div class="col-6" align="center">
+            <br>
+            <p style="font-size: 15px;"><b>Model:{{prd.model}}</b></p>
+            <p><b>Price:{{prd.price}}</b></p>
+          </div>
+          <div class="col-12" style="margin-top:15px;">
+            <button type="button" class="btn btn-info" style="width:100%; background-color: #FFF59D; color:black">Buy
+              Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 
+<div>
+  <div class="row">
+    <div class="col-12" *ngFor="let prd of value">
+      <label>{{prd.model}} </label>
+    </div>
+  </div>
+</div> -->
+  </div>
+</div>

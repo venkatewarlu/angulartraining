@@ -1,0 +1,50 @@
+<app-headercomp [title]="'USERS'"></app-headercomp>
+
+
+<!-- <div class="row">
+
+
+    <div class="offset-3" style="color:#4CAF50">
+        <app-analytics [amount]="users.length" [stock]="'TOTAL'"></app-analytics>
+    </div>
+    <div style="color:#880E4F">
+        <app-analytics [amount]="getAct()" [stock]="'ACTIVE'"></app-analytics>
+
+
+
+    </div>
+    <div style="color:#FF4081">
+        <app-analytics [amount]="getInAct()" [stock]="'INACTIVE'"></app-analytics>
+
+    </div>
+
+</div> -->
+<div class="row" style="background-color: #1E88E5; height:180px;padding-top:10px;" align="center">
+    <div class="offset-3">
+        <app-statcard [count]="users.length" [title]="'TOTAL'" [iconClass]="'fa fa-users'" [color]="'brown'">
+        </app-statcard>
+
+    </div>
+    <div>
+        <app-statcard [count]="getAct()" [title]="'ACTIVE'" [iconClass]="'fa fa-user'" [color]="'green'">
+        </app-statcard>
+
+    </div>
+    <div>
+        <app-statcard [count]="getInAct()" [title]="'INACTIVE'" [iconClass]="'fa fa-user'" [color]="'red'">
+        </app-statcard>
+
+    </div>
+
+
+</div>
+<br>
+<div class=" row">
+    <div class="col-11" style="margin-left:20px;">
+        <app-user-table [data]="users" [tableHeaders]="tableHeaders"></app-user-table>
+
+    </div>
+</div>
+
+<div class="container"><button type="button" class="btn btn-primary" (click)="navigateToUser(22)">User</button>
+</div>

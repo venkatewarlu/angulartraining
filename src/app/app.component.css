@@ -1,0 +1,35 @@
+ h1{
+    text-align: center;
+    
+    font-size: 40px;
+}
+
+
+#photo{
+    margin-top: 150px;
+    height:250px;
+    width:150px;
+}
+
+
+.parent {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.child{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .maindiv{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: #4FC3F7;
+  } 
+  
+  
